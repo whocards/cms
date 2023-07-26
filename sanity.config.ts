@@ -4,12 +4,15 @@ import {visionTool} from '@sanity/vision'
 //import {googleMapsInput} from '@sanity/google-maps-input'
 import {schemaTypes} from './schemas'
 
-export default defineConfig({
-  name: 'default',
-  title: 'khaki-locust',
+export const projectId = process.env.SANITY_STUDIO_PROJECT_ID!
+export const dataset = process.env.SANITY_STUDIO_DATASET!
 
-  projectId: 'q0nk3z3w',
-  dataset: 'production',
+export default defineConfig({
+  name: 'whocards',
+  title: 'WhoCards',
+
+  projectId,
+  dataset,
 
   plugins: [
     deskTool(),
