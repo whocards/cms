@@ -39,6 +39,12 @@ export default defineType({
       type: 'array',
       of: [{type: 'textSection'}],
     }),
+    defineField({
+      name: 'includeInMenu',
+      title: 'Include item in menu',
+      type: 'boolean',
+      initialValue: true,
+    }),
   ],
   preview: {
     select: {title: 'title', media: 'image'},
