@@ -1,4 +1,4 @@
-import {defineField, defineType, defineArrayMember} from '@sanity-typed/types'
+import {defineField, defineType, defineArrayMember} from 'sanity'
 import {BiParagraph as icon} from 'react-icons/bi'
 
 export default defineType({

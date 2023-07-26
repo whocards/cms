@@ -1,4 +1,4 @@
-import {defineArrayMember, defineType} from '@sanity-typed/types'
+import {defineArrayMember, defineType} from 'sanity'
 
 /**
  * This is the schema definition for the rich text fields used for

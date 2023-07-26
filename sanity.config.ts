@@ -1,4 +1,4 @@
-import {defineConfig, InferSchemaValues} from '@sanity-typed/types'
+import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
 //import {googleMapsInput} from '@sanity/google-maps-input'
@@ -26,5 +26,3 @@ const config = defineConfig({
 })
 
 export default config
-
-export type SchemaValues = InferSchemaValues<typeof config>
