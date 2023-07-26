@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineField, defineType} from '@sanity-typed/types'
 import {MdPerson as icon} from 'react-icons/md'
 
 export default defineType({

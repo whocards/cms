@@ -1,4 +1,4 @@
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from '@sanity-typed/types'
 import {CgWebsite as icon} from 'react-icons/cg'
 
 export default defineType({
@@ -37,7 +37,7 @@ export default defineType({
       name: 'textSections',
       title: 'Text Sections',
       type: 'array',
-      of: [{type: 'textSection'}],
+      of: [defineArrayMember({type: 'textSection'})],
     }),
     defineField({
       name: 'includeInMenu',

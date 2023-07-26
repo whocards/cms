@@ -1,9 +1,11 @@
-import {Rule, defineField, defineType} from 'sanity'
+import {defineField, defineType, defineArrayMember} from '@sanity-typed/types'
+import {BiParagraph as icon} from 'react-icons/bi'
 
 export default defineType({
   name: 'textSection',
   title: 'Text Section',
   type: 'object',
+  icon,
   fields: [
     defineField({
       name: 'title',
@@ -14,7 +16,7 @@ export default defineType({
       name: 'paragraphs',
       title: 'Paragraphs',
       type: 'array',
-      of: [{type: 'string'}],
+      of: [defineArrayMember({type: 'string'})],
     }),
     defineField({
       name: 'image',
